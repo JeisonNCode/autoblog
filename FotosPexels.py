@@ -35,10 +35,14 @@ def buscarImagen(palabra_clave):
                     name_file = file_path
                 else:
                     print("Error al descargar la imagen.")
-                    name_file = "man-791049.jpg"
+                    #name_file = "man-791049.jpg"
+                    buscarImagen("man phone")
+                    name_file = "man phone.jpg"
             else:
                 print("No se pudo obtener información de la imagen.")
-                name_file = "man-791049.jpg"
+                #name_file = "man-791049.jpg"
+                buscarImagen("man phone")
+                name_file = "man phone.jpg"
 
             return name_file            
                                                
@@ -46,9 +50,15 @@ def buscarImagen(palabra_clave):
 
         else:
             print("No se encontraron imágenes para la palabra clave especificada.")
-            name_file = "man-791049.jpg"
+            #name_file = "man-791049.jpg"
+            buscarImagen("man phone")
+            name_file = "man phone.jpg"
     else:
         print("Error al realizar la búsqueda de imágenes.")
-        name_file = "man-791049.jpg"
+        #name_file = "man-791049.jpg"
+        buscarImagen("man phone")
+        name_file = "man phone.jpg"
         
     return name_file
+
+print(buscarImagen("girl"))
