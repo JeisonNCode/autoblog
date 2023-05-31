@@ -60,5 +60,3 @@ def buscarImagen(palabra_clave):
         name_file = "man phone.jpg"
         
     return name_file
-
-print(buscarImagen("girl"))
